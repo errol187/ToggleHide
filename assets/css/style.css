@@ -1,0 +1,39 @@
+/* Format */
+body {
+  background-size: 12460px;
+}
+/************************* 
+	Nav block:
+	**********************/
+article {
+  height: 3em;
+  width: 10em;
+  display: table;
+  float: left;
+}
+article span {
+  /* hide on load  */
+  display: none;
+}
+article > input {
+  text-decoration: none;
+  display: block;
+  z-index: 99;
+  text-align: center;
+  text-transform: uppercase;
+}
+article > label {
+  color: #666666;
+  display: block;
+  padding: 2em 0;
+  transition-property: transform, all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+article:after {
+  clear: both;
+  display: table;
+}
+.show {
+  display: block;
+}
